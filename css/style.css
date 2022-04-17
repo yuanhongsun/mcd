@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'FZSTK';
+    src: url('./FZSTK.TTF');
+}
+@import url('https://fonts.font.im/css?family=Indie+Flower|Open+Sans+Condensed:300|Ruslan+Display');
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Ruslan Display', cursive;*/
+/*font-family: 'FZSTK';*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: 'Ruslan Display', cursive;
+}
+header{
+    width: 100%;
+    padding:  1vw 0;
+
+}
+.logo{
+    width: 30%;
+    margin: auto;
+
+}
+.logo>img{
+    width: 100%;
+}
+.menu{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu>a{
+    font-size: 2.3vw;
+    font-family: Gotham, Helvetica, neutral funds;
+    color: black;
+    font-weight: bolder;
+    transition: all 0.3s;
+    text-align: center;
+
+}
+.menu>a:hover{
+    color: #999999;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: Gotham, Helvetica, neutral funds;
+    color: black;
+    text-align: center;
+    background: #EDEDED;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 40px;
+}
+footer:hover{
+    background: #333333;
+    color:#EDEDED;
+}
+.active{
+    color: orange !important;
+}
+@media screen and (max-width: 1200px){
+    header{
+        padding: 26px 0;
+    }
+    .menu{
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 30%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 960px){
+    .menu{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu>a{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .menu>a:hover{
+        background: #CACDD1;
+    }
+    .logo{
+        width: 30%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,128 @@
+.con{
+    width: 90%;
+    margin: auto;
+}
+.con1{
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+            "m m m n"
+            "m m m n"
+;
+}
+
+.form_con{
+    grid-area: m;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.form_con>form>div{
+    width: 100%;
+}
+/*Gotham, Helvetica, neutral funds*/
+.form_con>form>div>label{
+    font-size: 20px;
+    font-family: Gotham, Helvetica, neutral funds;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.form_con>form>div>input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2vw;
+    text-indent: 10px;
+    box-sizing: border-box;
+}
+.form_con>form>div>select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2vw;
+}
+.form_con>form>div>textarea{
+    width: 100%;
+    min-height: 150px;
+    text-indent: 10px;
+    margin-bottom: 2vw;
+}
+
+.app_con{
+    grid-area: n;
+    text-align: center;
+}
+.app_con>video{
+    width: 100%;
+    height: auto;
+}
+option{
+    color: black;
+}
+.btns{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+button{
+    outline:none;
+    width: 60%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: Gotham, Helvetica, neutral funds;
+    cursor: pointer;
+    /*font-weight: bold;*/
+    transition: all 0.3s;
+    padding: 6px 0;
+}
+button:hover{
+    background-color: #EDEDED;
+    color: white;
+}
+
+@media screen and (max-width: 750px){
+    .con{
+        width: 95%;
+    }
+    .con1{
+        display: grid;
+        grid-gap: 35px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+                "m"
+                "n"
+    ;
+    }
+}
+
+.bodymovin{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+@keyframes mymove {
+    from{
+        display: flex;
+    }
+    to{
+        display: none;
+    }
+}
+#animate{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,20 @@
+.con{
+    width: 100%;
+    padding: 6vw 0;
+    text-align: center;
+}
+.title{
+    font-size: 15vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: Impact,sans-serif;
+}
+.goBack{
+    width: 100%;
+    text-align: center;
+    font-family: Impact,sans-serif;
+    font-size: 26px;
+}
+.goBack:hover{
+    color: #ff5b4f;
+}
